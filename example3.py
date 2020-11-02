@@ -44,10 +44,10 @@ so not every column will be the same size. You can also make a widget span multi
 using rowspan.
 """
 label1.grid(row = 1, column = 1)
-label2.grid(row = 1, column = 2, rowspan = 2)
+label2.grid(row = 1, column = 2,rowspan=3)
 lable3.grid(row = 2, column = 1)
 
 # entry1 is centered on the 2 columns that have been created
-entry1.grid(row=3, column = 1, columnspan=2)
+entry1.grid(row=3, column = 1)
 
 window.mainloop()

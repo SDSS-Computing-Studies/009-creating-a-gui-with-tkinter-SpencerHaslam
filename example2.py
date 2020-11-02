@@ -57,13 +57,7 @@ check1 = tk.Checkbutton(window)
 # set by the order that they are packed.  Try moving them around and see what happens:
 # There are options available when using tkinter.pack()
 # tkinter.pack() options can be found at https://www.tutorialspoint.com/python/tk_pack.htm
-label1.pack()
-label2.pack()
-lable3.pack()
-button1.pack()
-entry1.pack()
-combo.pack()
-check1.pack()
+
 
 #--------------------------------------------------------------------------
 # A Frame can be used to help organize how you want your widgets placed:
@@ -75,10 +69,20 @@ nF = Frame()
 #note that we use nF in the widget method here
 fLabel1 = Label(nF,text="hi!", background="#ffaaff")
 fLabel2 = Label(nF,text="another widget!", background="#aaffff")
-
-nF.pack()
 fLabel1.pack(side=LEFT)
 fLabel2.pack(side=LEFT)
+
+
+nF.pack()
+label1.pack()
+label2.pack()
+lable3.pack()
+button1.pack()
+entry1.pack()
+combo.pack()
+check1.pack()
+
+
 """
 Note some of the difficulty in trying to arrange your widgets1
 Some alternatve good control over your widgets can also be achieved using the
